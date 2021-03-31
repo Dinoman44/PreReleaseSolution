@@ -48,8 +48,8 @@ while x:
     # x // y returns the quotient of x/y (so 9 // 10 returns 0), accounting for the discount by making sure its in range
     costUp = (25 * numPassengers) - (25 * (numPassengers // 10))
     costDown = costUp
-    moneyPerTrain[i1] += priceUp
-    moneyPerTrain[i2] += priceDown
+    moneyPerTrain[i1] += costUp
+    moneyPerTrain[i2] += costDown
     # f-strings to put variables into strings, with :,.2f to format the string to use commas and 2 decimal places(ex: 1,000.00)
     print(f"Cost for departing train: $ {costUp:,.2f}")
     print(f"Cost for arriving train: $ {costDown:,.2f}")
