@@ -27,6 +27,6 @@ def get_valid_down_time(t1, timings):
             time = get_int("Train time: ")
     # if correct arrival time is given, but it is before departure time, function repeats, stopping only when arrival time is fully validated
     if time < t1:
-        check_valid_down_time(t1, timings)
+        get_valid_down_time(t1, timings)
 
     return time
